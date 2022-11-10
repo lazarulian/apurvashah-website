@@ -1,2 +1,1 @@
-# apurvashah-website
- My personal website created using react!
+Apurva's Personal Portfolio
