@@ -29,6 +29,7 @@ function App() {
 
     return () => clearTimeout(timer);
   }, []);
+  
   inject();
 
   return (
