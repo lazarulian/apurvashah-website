@@ -7,6 +7,7 @@ import "react-image-lightbox/style.css";
 // @ts-ignore
 import { images, CustomImage } from "./images.ts";
 import Particle from "../Particle";
+import Song from "./respite.mp3"
 
 export default function Agallery() {
   const [index, setIndex] = useState(-1);
@@ -46,6 +47,9 @@ export default function Agallery() {
               />
             )}
           </div>
+          <audio autoPlay loop controls className='gallery-music'>
+            <source src = {Song} type="audio/mpeg"/>
+          </audio>
         </Container>
       </Container>
     </section>

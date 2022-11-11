@@ -1277,3 +1277,9 @@ button:focus {
   display: block;
   width: 300px;
 }
+
+.gallery-music
+{
+  visibility: hidden;
+
+}
