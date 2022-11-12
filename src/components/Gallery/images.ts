@@ -1,14 +1,14 @@
 import { Image } from "react-grid-gallery";
-import img1 from "./aimages/ACA01775.JPG";
-import img2 from "./aimages/ACA01825.JPG";
-import img3 from "./aimages/Arshia2022-199.jpg";
-import img4 from "./aimages/Arshia2022-247.jpg";
-import img5 from "./aimages/Arshia2022-326.jpg";
-import img6 from "./aimages/Arshia2022-415.jpg";
-import img7 from "./aimages/Arshia2022-451.jpg";
-import img8 from "./aimages/Arshia2022-644.jpg";
-import img9 from "./aimages/Arshia2022-641.jpg";
-import img10 from "./aimages/Arshia2022-560.jpg";
+import img1 from "./aimages/EditedPhotos/ACA01775.jpg";
+import img2 from "./aimages/EditedPhotos/ACA01825.jpg";
+import img3 from "./aimages/EditedPhotos/Arshia2022-199.jpg";
+import img4 from "./aimages/EditedPhotos/Arshia2022-247.jpg";
+import img5 from "./aimages/EditedPhotos/Arshia2022-326.jpg";
+import img6 from "./aimages/EditedPhotos/Arshia2022-415.jpg";
+import img7 from "./aimages/EditedPhotos/Arshia2022-451.jpg";
+import img8 from "./aimages/EditedPhotos/Arshia2022-644.jpg";
+import img9 from "./aimages/EditedPhotos/Arshia2022-641.jpg";
+import img10 from "./aimages/EditedPhotos/Arshia2022-560.jpg";
 
 export interface CustomImage extends Image {
   original: string;
