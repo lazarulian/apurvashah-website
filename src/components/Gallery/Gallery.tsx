@@ -47,9 +47,9 @@ export default function Agallery() {
               />
             )}
           </div>
-          <audio autoPlay loop controls className='gallery-music'>
+          {/* <audio autoPlay loop controls className='gallery-music'>
             <source src = {Song} type="audio/mpeg"/>
-          </audio>
+          </audio> */}
         </Container>
       </Container>
     </section>
