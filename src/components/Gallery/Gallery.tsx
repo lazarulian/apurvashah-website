@@ -7,7 +7,6 @@ import "react-image-lightbox/style.css";
 // @ts-ignore
 import { images, CustomImage } from "./images.ts";
 import Particle from "../Particle";
-import Song from "./respite.mp3"
 
 export default function Agallery() {
   const [index, setIndex] = useState(-1);
