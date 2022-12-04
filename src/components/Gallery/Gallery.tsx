@@ -8,7 +8,7 @@ import "react-image-lightbox/style.css";
 import { images, CustomImage } from "./images.ts";
 import Particle from "../Particle";
 
-export default function Agallery() {
+export default function GalleryFunction() {
   const [index, setIndex] = useState(-1);
 
   const currentImage = images[index];
@@ -24,6 +24,10 @@ export default function Agallery() {
 
   return (
     <section>
+      <head>
+        <title>Professional Photography</title>
+        <meta name="description" content="I offer professional photography services specializing in portraits and graduation photos. Check out my portfolio here."></meta>
+      </head>
       <Container>
         <Particle/>
         <Container fluid className = "gallery-section">

@@ -8,6 +8,10 @@ import Interests from "./Interests";
 
 function About() {
   return (
+    <head>
+        <title>About Me</title>
+        <meta name="description" content="I am currently a student at the University of California, Los Angeles studying Cognitive Science."></meta>
+    </head>,
     <Container fluid className="about-section">
       <Particle />
       <Container>

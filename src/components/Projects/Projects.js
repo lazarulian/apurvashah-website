@@ -17,6 +17,10 @@ import homekit from "../../Assets/Projects/homekit.png";
 
 function Projects() {
   return (
+    <head>
+        <title>Projects</title>
+        <meta name="description" content="Explore some of the projects I have worked on in the realm of software and social services."></meta>
+    </head>,
     <Container fluid className="project-section">
       <Particle />
       <Container>

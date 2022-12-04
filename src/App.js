@@ -6,7 +6,7 @@ import About from "./components/About/About";
 import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/ResumeNew";
-import Agallery from "./components/Gallery/Gallery.tsx";
+import Gallery from "./components/Gallery/Gallery.tsx";
 import { inject } from '@vercel/analytics';
 import {
   BrowserRouter as Router,
@@ -43,7 +43,7 @@ function App() {
           <Route path="/project" element={<Projects />} />
           <Route path="/about" element={<About />} />
           <Route path="/resume" element={<Resume />} />
-          <Route path="/gallery" element={<Agallery />} />
+          <Route path="/photography" element={<Gallery />} />
           <Route path="*" element={<Navigate to="/"/>} />
         </Routes>
         <Footer />
