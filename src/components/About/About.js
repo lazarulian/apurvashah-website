@@ -24,7 +24,7 @@ function About() {
               paddingBottom: "50px",
             }}
           >
-            <h1 class="animate__animated animate__fadeInDown" style={{ fontSize: "2.4em", paddingBottom: "0px" }}>
+            <h1 className="animate__animated animate__fadeInDown" style={{ fontSize: "2.4em", paddingBottom: "0px" }}>
               About <strong className="purple">Me</strong>
             </h1>
             <Aboutcard />
@@ -38,7 +38,7 @@ function About() {
           </Col>
         </Row>
         <h1 className="project-heading-mobile">
-          <strong>My</strong> <strong className="purple">Interests</strong>
+          <strong>My</strong> <strong className="purple">Interests</strong> 
         </h1>
         <Interests />
       </Container>
