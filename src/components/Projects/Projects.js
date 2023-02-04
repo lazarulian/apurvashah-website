@@ -5,10 +5,12 @@ import Particle from "../Particle";
 import ScaleCPET from "../../Assets/Projects/ScaleCPET.png";
 import licensePlate from "../../Assets/Projects/license-plate.png";
 import portfolio from "../../Assets/Projects/personal-portfolio.png";
+import blog from "../../Assets/Projects/blog.png";
 
 import hopeinitiative from "../../Assets/Projects/hopeinitiative.png";
 import lsla from "../../Assets/Projects/lsla.png";
 import homekit from "../../Assets/Projects/homekit.png";
+import bruinden from "../../Assets/Projects/bruinden.png";
 
 function Projects() {
   return (
@@ -48,12 +50,23 @@ function Projects() {
 
             <Col md={4} className="project-card">
               <ProjectCard
-                imgPath={licensePlate}
+                imgPath={blog}
                 isBlog={false}
                 title="Cheat Codes"
                 description="My personal blog created using Next.js, Tailwind.css, GraphCMS, and GraphQL. Please check it out below!"
                 ghLink="https://github.com/lazarulian/cheatcodes"
-                demoLink="https://cheatcodes.vercel.app/"
+                demoLink="https://blog.apurvashah.org/"
+              />
+            </Col>
+
+            <Col md={4} className="project-card">
+              <ProjectCard
+                imgPath={bruinden}
+                isBlog={false}
+                title="Bruin den"
+                description="A platform to find historical rent prices increasing housing accessibility within Westwood, Los Angeles. Please check it out below!"
+                ghLink="https://github.com/lazarulian/bruin-den"
+                demoLink="https://bruinden.tech/"
               />
             </Col>
 
