@@ -39,7 +39,7 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <link rel="manifest" href="/static/favicon/site.webmanifest" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
-
+        <meta name="theme-color" content="#000a1f"/>
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://apurvashah.org/" />
         <meta property="og:title" content={pageTitle} />

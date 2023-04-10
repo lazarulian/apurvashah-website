@@ -292,7 +292,7 @@ pre {
 }
 
 .heroElem {
-  animation: scaleDownIn 1s cubic-bezier(.93,.93,.63,.64);
+  /* animation: scaleDownIn 1s cubic-bezier(.93,.93,.63,.64); */
 }
 
 .heroElem .sqD:not(.squiggle-hero-pop1) {

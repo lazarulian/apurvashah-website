@@ -7,7 +7,7 @@ type HeadingProps = {
 function Heading() {
   return (
     <div
-      className={"py-12 sm:py-20 w-full text-center relative"}
+      className={"pb-5 pt-20 w-full text-center relative"}
     >
         <h1 className="text-4xl sm:text-6xl inline-block w-auto mx-auto relative">
           About
