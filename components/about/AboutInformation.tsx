@@ -1,4 +1,5 @@
 import React from 'react'
+import AboutCard from './AboutCard';
 
 
 function AboutInformation() {
@@ -7,8 +8,7 @@ function AboutInformation() {
         <div className='text-left'>
           <p className=''>
             Hi everyone, I'm Apurva. I'm
-            currently a Junior at UCLA studying Cognitive Science Specializing
-            in Computer Science. In my free time, I enjoy backpacking, trying new foods, 
+            currently studying in Los Angeles, CA. In my free time, I enjoy backpacking, trying new foods, 
             watching football, and reading new books.
             <br/>
             <br/>
@@ -16,14 +16,17 @@ function AboutInformation() {
             I would love to get to know you 😁
             <br />
             <br />
-            Some quick facts about me:
-            <ul className='list-disc pl-5'>
-              <li>My favorite book is <span className='italic'>When Breath Becomes Air</span></li>
-              <li>My favorite food is Chipotle</li>
-              <li>I budget in my freetime with YNAB</li>
-              <li>I used to work at Duffl, a startup at UCLA</li>
-            </ul>
           </p>
+          <div className='flex flex-wrap md:flex-row flex-col items-center justify-center'>
+            <AboutCard
+            title="Cog Sci @ UCLA"
+            img_url="https://pyxis.nymag.com/v1/imgs/7a6/825/edd93dff41c44f61a2452a119f29fedee2-ucla-.jpg" 
+            text="I'm currently a Junior at UCLA studying Cognitive Science Specializing in Computer Science."/>
+            <AboutCard
+            title="Studying Abroad"
+            img_url="https://www.douglasandgordon.com/media/1903330/aerial-view-ancient-architecture-672532.jpg?crop=0,0.0963568052496329,0,0.15584583792217319&cropmode=percentage&width=1024&height=512&rnd=132506791710000000" 
+            text="As of Spring 2023, I am currently studying abroad in the cities of London & Paris."/>
+          </div>
         </div>
       </div>
     );
