@@ -137,13 +137,22 @@ const projects: Project[] = [
   },
   {
     id: 16,
+    title: "GPTinerary",
+    desc: "Web app designed to generate travel itineraries using GPT-3 and convert them into universal ICS cal files.",
+    img: "/static/projects/GPTinerary.jpeg",
+    github: "https://github.com/lazarulian/GPTinerary/",
+    link: "https://gptinerary.vercel.app/",
+    tags: ["Node", "GPT-3", "NextJS", "TailwindCSS"],
+  },
+  {
+    id: 17,
     title: "Genre Classifier",
     desc: "Implementation of genre classification engine extracting MFCCs to train Random Forest Classifiers.",
     img: "/static/projects/GenreClassifier.jpeg",
     tags: ["Python", "Flask", "Machine Learning"],
   },
   {
-    id: 17,
+    id: 18,
     title: "ScaleCPET",
     desc: "A Cardiopulmonary Testing platform delivering visualizations, patient analysis, and insight.",
     img: "/static/projects/ScaleCPET.jpg",
