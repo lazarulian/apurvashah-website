@@ -37,7 +37,11 @@ export const routes: Route[] = [
   },
   {
     title: "Blog",
-    path: "/blog",
+    path: "https://blog.apurvashah.org",
+  },
+  {
+    title: "Gallery",
+    path: "https://photography.apurvashah.org",
   },
 ];
 
