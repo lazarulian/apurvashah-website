@@ -8,11 +8,6 @@ function Navbar({ currentPage }) {
       <li className="list-none font-bold text-lg cursor-pointer">
         <Link href="/">
           <span className="font-black text-xl flex items-center">
-            {/* <img
-              className="mr-2 transform hover:rotate-360 hover:scale-75 transition-transform duration-500"
-              src="/static/logos/logo_no_text.svg"
-              width="60"
-            /> */}
                 <span className="hover:text-fun-pink transition-all duration-500 hover:duration-100 click:goodbyeLetterAnim">
                   AS.
                 </span>

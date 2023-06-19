@@ -16,24 +16,28 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
   },
   {
-    title: "C++",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-  },
-  {
-    title: "Java",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg",
-  },
-  {
-    title: "C",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/c/c-original.svg",
-  },
-  {
     title: "Javascript",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
   },
   {
+    title: "C++",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+  },
+  {
+    title: "Go",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/go/go-original-wordmark.svg",
+  },
+  {
+    title: "Swift",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/swift/swift-original.svg",
+  },
+  {
     title: "Bash",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg",
+  },
+  {
+    title: "NodeJS",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
   },
   {
     title: "Django",
@@ -52,20 +56,16 @@ export const skills: Skill[] = [
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/fastapi/fastapi-original.svg",
   },  
   {
-    title: "NodeJS",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-  },
-  {
-    title: "Firebase",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+    title: "Pytest",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytest/pytest-plain.svg",
   },
   {
     title: "SQL",
     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg",
   },
   {
-    title: "PostgreSQL",
-    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg",
+    title: "SQLite",
+    icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sqlite/sqlite-original.svg",
   },
   {
     title: "Docker",

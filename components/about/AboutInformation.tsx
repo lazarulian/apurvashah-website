@@ -19,13 +19,13 @@ function AboutInformation() {
           </p>
           <div className='flex flex-wrap md:flex-row flex-col items-center justify-center'>
             <AboutCard
-            title="Cog Sci @ UCLA"
+            title="CS @ UCLA"
             img_url="https://pyxis.nymag.com/v1/imgs/7a6/825/edd93dff41c44f61a2452a119f29fedee2-ucla-.jpg" 
-            text="I'm currently a Junior at UCLA studying Cognitive Science Specializing in Computer Science."/>
+            text="I'm currently a Junior at UCLA studying Cognitive Science and Computer Science."/>
             <AboutCard
-            title="Studying Abroad"
-            img_url="https://www.douglasandgordon.com/media/1903330/aerial-view-ancient-architecture-672532.jpg?crop=0,0.0963568052496329,0,0.15584583792217319&cropmode=percentage&width=1024&height=512&rnd=132506791710000000" 
-            text="As of Spring 2023, I am currently studying abroad in the cities of London & Paris."/>
+            title="Interning at Tanium"
+            img_url="https://s.hdnux.com/photos/01/21/11/14/21271334/13/1200x0.jpg" 
+            text="As of Summer 2023, I am currently working as a Software Engineer Intern on Tanium's Patch Team"/>
           </div>
         </div>
       </div>
