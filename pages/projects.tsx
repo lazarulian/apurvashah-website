@@ -8,10 +8,21 @@ function projects() {
   return (
     <Page
       currentPage="Projects"
-      meta={{ title: "Projects", desc: "I love to build things using the skills at my disposal! Here are some of my favorite projects." }}
+      meta={{
+        title: "Projects",
+        desc: "I love to build things using the skills at my disposal! Here are some of my favorite projects.",
+      }}
     >
-      <Heading />
-      <Projects />
+      <Heading
+        tag="Passion"
+        description="Creations from my lab, at hackathons, or just to make my life a little bit easier 😁"
+      />
+      <Projects projectType="passionProjects" />
+      <Heading
+        tag="Academic"
+        description="These are some of the highlights from the classes I've taken at UCLA 🐻"
+      />
+      <Projects projectType="academicProjects" />
       <More />
     </Page>
   );
