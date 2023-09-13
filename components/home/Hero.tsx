@@ -3,7 +3,7 @@ import { Link as ScrollLink } from "react-scroll";
 import TextTransition, { presets } from 'react-text-transition';
 
 function Hero() {
-  const TEXTS = ['Graduating from UCLA', 'Software Engineering', 'Machine Learning', 'Casworking at MCP'];
+  const TEXTS = ['Graduating from UCLA', 'Software Engineering', 'Casworking at MCP', 'Traveling the World'];
   const [index, setIndex] = React.useState(0);
   React.useEffect(() => {
     const intervalId = setInterval(

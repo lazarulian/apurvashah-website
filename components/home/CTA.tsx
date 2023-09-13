@@ -9,7 +9,7 @@ function CTA() {
           Feel free to reach out!
         </h2>
         <a
-          href="mailto:apurvashah@g.ucla.edu"
+          href="https://cal.com/apurva-shah/coffee"
           className="cursor-pointer font-bold whitespace-nowrap 
         mt-6 px-8 py-3 text-white border-2 rounded-full border-white bg-bg hover:bg-fun-pink hover:border-fun-pink transition-colors"
         >
