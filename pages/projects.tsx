@@ -14,12 +14,12 @@ function projects() {
       }}
     >
       <Heading
-        tag="Passion"
+        altTag="Passion"
         description="Creations from my lab, at hackathons, or just to make my life a little bit easier 😁"
       />
       <Projects projectType="passionProjects" />
       <Heading
-        tag="Academic"
+        altTag="Academic"
         description="These are some of the highlights from the classes I've taken at UCLA 🐻"
       />
       <Projects projectType="academicProjects" />

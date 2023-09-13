@@ -1,9 +1,9 @@
 import Page from "components/utility/Page";
 
 import { GetStaticProps, GetStaticPaths } from "next";
-import { allKebabTags, allTags } from "@/data/content/projects";
+import { allKebabTags, allTags } from "@/data/content/combinedProjects";
 
-import projects from "@/data/content/projects";
+import projects from "@/data/content/combinedProjects";
 
 import { kebabCase, kebabArray } from "@/utils/utils";
 import Projects from "components/projects/Projects";
@@ -45,6 +45,7 @@ export const getStaticProps: GetStaticProps = async ({params}: {params: {tag: st
 
 function PostPage({ filteredProjects, tag }) {
   const capsTag = allTags[allKebabTags.indexOf(tag)];
+  console.log(capsTag)
   return (
     <Page
       currentPage="Projects"
@@ -55,13 +56,12 @@ function PostPage({ filteredProjects, tag }) {
     >
       <Heading tag={capsTag} />
       <Projects overwriteProjects={filteredProjects} />
-
       <Link href="/projects">
         <div className="mt-8 max-w-sm md:max-w-2xl border border-fun-pink mx-auto text-center w-full whitespace-nowrap px-8 py-3 rounded-full text-fun-pink bg-fun-pink-darkerer hover:bg-fun-pink hover:text-white transition-colors cursor-pointer">
           View All
         </div>
       </Link>
-      {/* <More /> */}
+      <More />
     </Page>
   );
 }

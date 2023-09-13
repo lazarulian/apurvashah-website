@@ -1,7 +1,7 @@
 import { kebabCase, kebabArray } from "@/utils/utils";
 import { Project } from "types";
 
-const projects: Project[] = [
+const passionProjects: Project[] = [
   {
     id: 3,
     title: "HomekitAPI",
@@ -96,10 +96,10 @@ const projects: Project[] = [
 
 export const allTags = [];
 
-projects.forEach((project) => {
+passionProjects.forEach((project) => {
   project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag));
 });
 
 export const allKebabTags = allTags.map((tag) => kebabCase(tag));
 
-export default projects;
+export default passionProjects;
