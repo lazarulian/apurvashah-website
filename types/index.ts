@@ -7,3 +7,11 @@ export type Project = {
   github?: string;
   tags: string[];
 };
+
+export type Affiliation = {
+  id: number;
+  title: string;
+  desc: string;
+  date: string;
+  link?: string;
+};
