@@ -6,12 +6,7 @@ import Skills from "@/components/home/Skills";
 
 export default function Home() {
   return (
-    <Page
-      currentPage="Home"
-      meta={{
-        desc: "My name is Apurva Shah. I am a student at UCLA studying Cognitive Science specializing in Computer Science.",
-      }}
-    >
+    <Page currentPage="Home" meta={{ desc: "Welcome to my portfolio. I am a student at UCLA studying Cognitive Science specializing in Machine Learning & Computer Science." }}>
       <Hero />
       <div className="mt-20 space-y-32">
         <Projects />
