@@ -1,3 +1,4 @@
+// All Passion & Academic Projects
 export type Project = {
   id: number;
   title: string;
@@ -8,6 +9,7 @@ export type Project = {
   tags: string[];
 };
 
+// Job, Volunteer, History
 export type Affiliation = {
   id: number;
   title: string;

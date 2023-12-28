@@ -1,8 +1,8 @@
 import Heading from "components/about/Heading";
 import AboutInformation from "@/components/about/AboutInformation";
+import AboutMoreInformation from "@/components/about/AboutMoreInformation";
 import Page from "components/utility/Page";
 import React from "react";
-import AboutMoreInformation from "@/components/about/AboutMoreInformation";
 
 const About = () => {
   return (
