@@ -6,14 +6,13 @@ import AffiliationTimeline from "../art/timeline/AffiliationTimeline";
 const AboutMoreInformation = () => {
   return (
     <div className="m-4 mx-auto md:w-2/3">
-      <h2 className="text-3xl p-4">A Little Flavor 🌶️</h2>
       <div className="text-left text-xl flex flex-col space-y-2">
         {/* Travel Goals */}
         <Disclosure title="Travel Goals 🛩️">
           <ul className="text-base px-4">
-            Most recently, I had the time of my life in Spain 🇪🇸, Portugal 🇵🇹,
-            and Switzerland 🇨🇭. This Spring, I have my eye on Japan 🇯🇵 and South
-            Korea 🇰🇷. If you want to tag along, please reach out!
+            Most recently, I had the time of my life in the Dominican Republic
+            🇩🇴 Hopefully this summer, I hit Greece 🇬🇷, Czechia 🇨🇿, Türkiye 🇹🇷,
+            and Hungary 🇭🇺.
           </ul>
           <Map />
         </Disclosure>

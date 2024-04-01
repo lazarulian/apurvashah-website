@@ -50,10 +50,19 @@
 #PT {
   fill: var(--visited);
 }
-#JP {
+#DO {
+  fill: var(--visited);
+}
+#CZ {
   fill: var(--next);
 }
-#KR {
+#HU {
+  fill: var(--next);
+}
+#TR {
+  fill: var(--next);
+}
+#GR {
   fill: var(--next);
 }
 
