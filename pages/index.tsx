@@ -3,6 +3,9 @@ import Hero from "@/components/home/Hero";
 import Page from "@/components/utility/Page";
 import Projects from "@/components/home/Projects";
 import Skills from "@/components/home/Skills";
+import Link from "next/link";
+import React, { useState, useEffect } from "react";
+import { randomNumberText } from "@/utils/utils";
 
 export default function Home() {
   return (

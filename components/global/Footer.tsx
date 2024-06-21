@@ -65,7 +65,7 @@ function Footer() {
               </span>
               <span>
                 <img
-                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg"
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg"
                   width="26"
                   title="TailwindCSS"
                 />
@@ -81,10 +81,13 @@ function Footer() {
             >
               Apurva Shah
             </a>
-            . Template by <a
-              href="braydentw.io"
+            . Design by{" "}
+            <a
+              href="https://braydentw.io"
               className="text-fun-gray-light font-medium"
-            >Brayden Wright</a>
+            >
+              Brayden Wright
+            </a>
           </div>
         </p>
       </div>

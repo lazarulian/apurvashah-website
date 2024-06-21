@@ -6,9 +6,7 @@ import React, { ReactChildren } from "react";
 
 function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
   const pageTitle = `${
-    currentPage === "Home"
-      ? "Apurva Shah"
-      : `${currentPage} - Apurva Shah`
+    currentPage === "Home" ? "Apurva Shah" : `${currentPage} - Apurva Shah`
   }`;
   return (
     <div
@@ -38,17 +36,20 @@ function Page({ currentPage, meta: { title, desc }, children }: PageProps) {
         <link rel="manifest" href="/static/favicon/site.webmanifest" />
         <meta name="title" content={pageTitle} />
         <meta name="description" content={desc} />
-        <meta name="theme-color" content="#000a1f"/>
+        <meta name="theme-color" content="#000a1f" />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://apurvashah.org/" />
         <meta property="og:title" content={pageTitle} />
         <meta property="og:description" content={desc} />
-        <meta property="og:image" content="/static/misc/og.png"/>
+        <meta property="og:image" content="/static/misc/og.png" />
         <meta property="twitter:card" content="summary_large_image" />
         <meta property="twitter:url" content="https://apurvashah.org/" />
         <meta property="twitter:title" content={pageTitle} />
         <meta property="twitter:description" content={desc} />
-        <meta property="twitter:image" content="https://apurvashah.org/static/misc/og.png"/>
+        <meta
+          property="twitter:image"
+          content="https://apurvashah.org/static/misc/og.png"
+        />
         <script
           async
           src={`https://www.googletagmanager.com/gtag/js?id=${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}`}
