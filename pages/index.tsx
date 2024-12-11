@@ -2,10 +2,7 @@ import CTA from "@/components/home/CTA";
 import Hero from "@/components/home/Hero";
 import Page from "@/components/utility/Page";
 import Projects from "@/components/home/Projects";
-import Skills from "@/components/home/Skills";
-import Link from "next/link";
-import React, { useState, useEffect } from "react";
-import { randomNumberText } from "@/utils/utils";
+import Videography from "@/components/home/Videography";
 
 export default function Home() {
   return (
@@ -16,9 +13,9 @@ export default function Home() {
       }}
     >
       <Hero />
-      <div className="mt-20 space-y-32">
-        <Projects />
-      </div>
+      <div className="mt-20 space-y-32"></div>
+      <Videography />
+      <Projects />
       <CTA />
     </Page>
   );

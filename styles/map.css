@@ -54,15 +54,15 @@
   fill: var(--visited);
 }
 #CZ {
-  fill: var(--next);
-}
-#HU {
-  fill: var(--next);
-}
-#TR {
-  fill: var(--next);
+  fill: var(--visited);
 }
 #GR {
+  fill: var(--visited);
+}
+#IT {
+  fill: var(--visited);
+}
+#JP {
   fill: var(--next);
 }
 

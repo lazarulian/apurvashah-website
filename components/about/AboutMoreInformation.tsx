@@ -9,11 +9,6 @@ const AboutMoreInformation = () => {
       <div className="text-left text-xl flex flex-col space-y-2">
         {/* Travel Goals */}
         <Disclosure title="Travel Goals 🛩️">
-          <ul className="text-base px-4">
-            Most recently, I had the time of my life in the Dominican Republic
-            🇩🇴 Hopefully this summer, I hit Greece 🇬🇷, Czechia 🇨🇿, Türkiye 🇹🇷,
-            and Hungary 🇭🇺.
-          </ul>
           <Map />
         </Disclosure>
         {/* Book Recommendations */}

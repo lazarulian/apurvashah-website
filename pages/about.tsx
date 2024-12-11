@@ -10,7 +10,7 @@ const About = () => {
       currentPage="About"
       meta={{
         title: "About",
-        desc: "Hi, my name is Apurva and I am a student at UCLA studying Cognitive Science. In my free time, I love to backpack & solve complex problems with computer science.",
+        desc: "Hi, my name is Apurva and I am a Software Engineer at Tanium. In my free time, I love backpacking & solve complex problems with computer science.",
       }}
     >
       <Heading />
