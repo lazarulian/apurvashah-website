@@ -20,17 +20,7 @@ const nextConfig: NextConfig = {
       {
         protocol: "https",
         port: "",
-        hostname: "images.unsplash.com",
-      },
-      {
-        protocol: "https",
-        port: "",
-        hostname: "source.unsplash.com",
-      },
-      {
-        protocol: "https",
-        port: "",
-        hostname: "assets.literal.club",
+        hostname: "**.literal.club",
       },
     ],
   },

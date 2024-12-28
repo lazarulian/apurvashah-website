@@ -1,5 +1,5 @@
-import ScrollArea from "@/components/scroll-area";
-import Photo from "@/components/photo";
+import ScrollArea from "./scroll-area";
+import Photo from "./photo";
 
 const Gallery = ({
   photos,

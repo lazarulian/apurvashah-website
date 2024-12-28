@@ -16,23 +16,12 @@ const Hero = () => {
         <span className="inline-block w-2 h-2 rounded-full bg-accent" />
         Apurva Shah
       </h1>
-      <p className="mt-1 text-gray-9">
-        Software Engineer, Videographer, and a Chipotle enthusiast.
-      </p>
+      <p className="mt-1 text-gray-9">San Francisco, CA</p>
       <div className="flex flex-col mt-4 gap-y-2">
         <p>
-          Crafting memorable interfaces with a deep attention to detail. I
-          dedicate most my time to continuous learning and refining my skillset.
-        </p>
-        <p>
-          I&apos;m a creative{" "}
-          <LinkPrimitive
-            href="https://www.youtube.com/watch?v=jG7dSXcfVqE"
-            external
-          >
-            doing what I can&apos;t
-          </LinkPrimitive>
-          .
+          Welcome to my space on the web. I created this because I wanted a
+          place to showcase what I&apos;ve been working on. Hope you find
+          something you like.
         </p>
         <div className="flex gap-x-6 mt-2 items-center">
           <LinkPrimitive href="/about" variant="route">
@@ -40,7 +29,11 @@ const Hero = () => {
             <ArrowRight size={12} aria-hidden={true} />
           </LinkPrimitive>
 
-          <LinkPrimitive href="/blog" variant="route">
+          <LinkPrimitive
+            href="https://blog.apurvashah.org"
+            variant="route"
+            external
+          >
             Check out my blog
             <ScribbleLoop size={12} aria-hidden={true} />
           </LinkPrimitive>

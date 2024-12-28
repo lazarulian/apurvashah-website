@@ -12,7 +12,8 @@ const Currently = async () => {
   const track = {
     title: "Pink + White",
     artist: "Frank Ocean",
-    songUrl: "https://google.com",
+    songUrl:
+      "https://music.apple.com/us/album/pink-white/1146195596?i=1146195714",
   };
 
   return (
@@ -22,10 +23,10 @@ const Currently = async () => {
         <LinkPrimitive href={track.songUrl} external popover>
           {track.title}
         </LinkPrimitive>
-        &nbsp;by {track.artist} and slowly reading{" "}
+        &nbsp;by {track.artist} and making my way through{" "}
         <ReadingCard {...reading}>
           <LinkPrimitive
-            href={`https://literal.club/ms/book/${reading.slug}`}
+            href={`https://literal.club/apurvashah/book/${reading.slug}`}
             external
             popover
           >

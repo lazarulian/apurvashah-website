@@ -50,9 +50,10 @@ const HoverCardContentData = ({
   title: string;
   author: string;
 }) => {
+  console.log(src);
   return (
     <>
-      <div className="aspect-square border rounded-[3px] overflow-hidden relative">
+      <div className="aspect-square border rounded-[3px] overflow-hidden relative h-48">
         <Image
           src={src}
           fill
@@ -60,6 +61,7 @@ const HoverCardContentData = ({
           alt={`Album art for ${title} by ${author}`}
           quality={50}
         />
+        <img></img>
       </div>
       <div className="text-gray-1 mt-2 mb-1">
         <span className="font-medium leading-none block truncate">{title}</span>

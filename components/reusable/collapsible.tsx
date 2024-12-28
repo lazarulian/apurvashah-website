@@ -36,7 +36,7 @@ const AccordionItem = ({
         >
           <CaretDown
             size={11}
-            className="text-gray-10 group-data-[state=open]:-rotate-90 transition-transform duration-150 mr-2 group-hover:text-gray-12 group-focus-visible:text-gray-12 group-data-[state=open]:text-gray-1 -translate-y-px"
+            className="text-gray-10 group-data-[state=closed]:-rotate-90 group-data-[state=open]:-rotate-0 transition-transform duration-150 mr-2 group-hover:text-gray-12 group-focus-visible:text-gray-12 group-data-[state=open]:text-gray-1 -translate-y-px"
             aria-hidden={true}
           />
 
@@ -66,7 +66,7 @@ const AccordionItem = ({
           )}
         </AccordionPrimitive.Trigger>
       </div>
-      <AccordionPrimitive.Content className="overflow-hidden transition-all data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down">
+      <AccordionPrimitive.Content className="overflow-hidden transition-all data-[state=closed]:animate-accordionUp data-[state=open]:animate-accordionDown">
         <div className="flex flex-col px-2 py-3 gap-y-2">
           <p>{description}</p>
           <div className="flex gap-x-1.5">
