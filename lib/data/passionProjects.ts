@@ -1,7 +1,4 @@
-import { kebabCase, kebabArray } from "@/utils/utils";
-import { Project } from "types";
-
-const passionProjects: Project[] = [
+export const passionProjects = [
   {
     id: 3,
     title: "HomekitAPI",
@@ -93,13 +90,3 @@ const passionProjects: Project[] = [
     tags: ["Django", "PostgreSQL", "NextJS", "TailwindCSS"],
   },
 ];
-
-export const allTags = [];
-
-passionProjects.forEach((project) => {
-  project.tags.forEach((tag) => !allTags.includes(tag) && allTags.push(tag));
-});
-
-export const allKebabTags = allTags.map((tag) => kebabCase(tag));
-
-export default passionProjects;
