@@ -14,7 +14,7 @@ export const LinkWithArrow = ({
   return (
     <div
       className={cn(
-        "group relative hover:text-gray-10 transition duration-500",
+        "group relative hover:text-gray-500 transition duration-500",
         className
       )}
     >

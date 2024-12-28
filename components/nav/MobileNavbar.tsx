@@ -20,6 +20,11 @@ export default function MobileNavbar() {
     document.body.style.overflow = isMenuOpen ? "" : "hidden";
   }
 
+  function closeMenu() {
+    setIsMenuOpen(false);
+    document.body.style.overflow = ""; // Reset overflow when menu is closed
+  }
+
   useEffect(() => {
     return function cleanup() {
       document.body.style.overflow = "";
@@ -57,10 +62,14 @@ export default function MobileNavbar() {
           {routes.map((item, index) => (
             <li
               key={item.path || index}
-              className="border-b border-gray-900 text-gray-100 text-sm font-semibold"
+              className="border-b border-gray-900 text-gray-5000 text-sm font-semibold"
               style={{ transitionDelay: `${150 + index * 25}ms` }}
             >
-              <Link href={item.path} className="flex w-auto pb-4">
+              <Link
+                href={item.path}
+                className="flex w-auto pb-4"
+                onClick={closeMenu} // Close menu on link click
+              >
                 {item.title}
               </Link>
             </li>
@@ -74,7 +83,7 @@ export default function MobileNavbar() {
 function MenuIcon() {
   return (
     <svg
-      className="h-5 w-5 absolute text-gray-100"
+      className="h-5 w-5 absolute text-gray-5000"
       width="20"
       height="20"
       viewBox="0 0 20 20"
@@ -101,7 +110,7 @@ function MenuIcon() {
 function CrossIcon() {
   return (
     <svg
-      className="h-5 w-5 absolute text-gray-100"
+      className="h-5 w-5 absolute text-gray-5000"
       viewBox="0 0 24 24"
       width="24"
       height="24"

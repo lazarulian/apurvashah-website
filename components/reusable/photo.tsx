@@ -14,7 +14,7 @@ const Photo = ({
 }) => (
   <div
     className={cn(
-      "relative overflow-hidden border rounded-md w-60 h-80 shrink-0 border-gray-12",
+      "relative overflow-hidden border rounded-md w-60 h-80 shrink-0 border-gray-800",
       className
     )}
   >

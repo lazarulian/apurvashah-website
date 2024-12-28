@@ -1,13 +1,7 @@
 import React from "react";
 import Section from "@/components/reusable/section";
 import LinkPrimitive from "@/components/reusable/link-primatives";
-import {
-  ArrowRight,
-  Copy,
-  ScribbleLoop,
-} from "@phosphor-icons/react/dist/ssr/index";
-import { ContactItem } from "@/components/reusable/contact-link";
-import { ContactCopyItem } from "@/components/reusable/contact-link";
+import { ArrowRight, ScribbleLoop } from "@phosphor-icons/react/dist/ssr/index";
 
 const Hero = () => {
   return (
@@ -16,7 +10,7 @@ const Hero = () => {
         <span className="inline-block w-2 h-2 rounded-full bg-accent" />
         Apurva Shah
       </h1>
-      <p className="mt-1 text-gray-9">San Francisco, CA</p>
+      <p className="mt-1 text-gray-500">San Francisco, CA</p>
       <div className="flex flex-col mt-4 gap-y-2">
         <p>
           Welcome to my space on the web. I created this because I wanted a
@@ -37,9 +31,6 @@ const Hero = () => {
             Check out my blog
             <ScribbleLoop size={12} aria-hidden={true} />
           </LinkPrimitive>
-          <ContactItem icon={<Copy />} className="text-sm">
-            <ContactCopyItem title="Email me" copy="shahh.apurva@gmail.com" />
-          </ContactItem>
         </div>
       </div>
     </Section>

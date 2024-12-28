@@ -5,7 +5,7 @@ const Video = ({ src, className }: { src: string; className?: string }) => {
   return (
     <div
       className={cn(
-        "border border-gray-12 overflow-hidden aspect-video",
+        "border border-gray-800 overflow-hidden aspect-video",
         className
       )}
     >

@@ -43,7 +43,10 @@ export const ContactItem = ({
 }) => {
   return (
     <div
-      className={cn("group relative text-gray-11 hover:text-gray-1", className)}
+      className={cn(
+        "group relative text-gray-600 hover:text-gray-100",
+        className
+      )}
     >
       <Slot>{children}</Slot>
       <div

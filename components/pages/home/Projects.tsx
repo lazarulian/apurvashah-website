@@ -35,7 +35,7 @@ const Project = (Project: ProjectType) => {
       </p>
       <div className="flex items-center mt-2 gap-x-4">
         <a
-          className="flex gap-x-1.5 items-center text-gray-10 cursor-pointer text-sm"
+          className="flex gap-x-1.5 items-center text-gray-500 cursor-pointer text-sm"
           href={Project.liveLink}
           target="_blank"
           rel="noreferrer"
@@ -45,12 +45,12 @@ const Project = (Project: ProjectType) => {
             className="w-3.5 h-3.5 p-0.5 bg-accent flex items-center justify-center rounded-sm"
             aria-hidden={true}
           >
-            <ArrowUpRight size={12} className="shrink-0 text-gray-12" />
+            <ArrowUpRight size={12} className="shrink-0 text-gray-600" />
           </span>
         </a>
         {Project.codeLink && (
           <a
-            className="flex gap-x-1.5 items-center text-gray-10 cursor-pointer text-sm"
+            className="flex gap-x-1.5 items-center text-gray-500 cursor-pointer text-sm"
             href={Project.codeLink}
             target="_blank"
             rel="noreferrer"
@@ -60,7 +60,7 @@ const Project = (Project: ProjectType) => {
               className="w-3.5 h-3.5 p-0.5 bg-accent flex items-center justify-center rounded-sm"
               aria-hidden={true}
             >
-              <ArrowUpRight size={12} className="shrink-0 text-gray-12" />
+              <ArrowUpRight size={12} className="shrink-0 text-gray-600" />
             </span>
           </a>
         )}

@@ -6,10 +6,10 @@ export const link = cva(["flex", "items-center", "gap-x-0.5", "w-fit"], {
   variants: {
     variant: {
       route: [
-        "text-gray-11 text-xs hover:bg-accent fade-in duration-500 hover:text-gray-12 px-1.5 py-1 rounded-sm -mx-1.5 font-medium border border-gray-12 hover:border-accent",
+        "text-gray-600 text-xs hover:bg-accent fade-in duration-500 hover:text-gray-600 px-1.5 py-1 rounded-sm -mx-1.5 font-medium border border-gray-800 hover:border-accent",
       ],
       default: [
-        "hover:bg-accent fade-in duration-500 hover:text-gray-12 after:content-[''] after:absolute after:bottom-px after:left-0 after:w-full after:h-px after:bg-accent relative inline-flex",
+        "hover:bg-accent fade-in duration-500 hover:text-gray-600 after:content-[''] after:absolute after:bottom-px after:left-0 after:w-full after:h-px after:bg-accent relative inline-flex",
       ],
     },
     popover: {
