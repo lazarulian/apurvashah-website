@@ -8,14 +8,14 @@ export const viewport: Viewport = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="p-4 py-10 md:p-12 bg">
-      <div className="hidden sm:block z-100">
+    <div className="py-10 md:px-12 bg relative">
+      <div className="hidden sm:block z-[100]">
         <Navbar />
       </div>
-      <div className="-m-5 block sm:hidden z-100">
+      <div className="absolute top-0 left-0 w-full sm:hidden z-[100]">
         <MobileNavbar />
       </div>
-      <div className="mt-5">{children}</div>
+      <div className="mt-5 px-4">{children}</div>
     </div>
   );
 };
