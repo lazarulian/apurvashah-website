@@ -1,4 +1,5 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
+import Head from "next/head";
 import { Analytics } from "@vercel/analytics/react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import localFont from "next/font/local";
@@ -19,6 +20,10 @@ const monument = localFont({
     },
   ],
 });
+
+export const viewport: Viewport = {
+  themeColor: "#0F0F0F",
+};
 
 export const metadata: Metadata = {
   title: {
@@ -47,6 +52,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta name="theme-color" content="#000000" />
+      </Head>
       <body className={cn(monument.className)}>
         {children}
         <Analytics />
