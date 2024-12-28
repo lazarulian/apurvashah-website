@@ -1,6 +1,4 @@
-import { Affiliation } from "types";
-
-const Affiliations: Affiliation[] = [
+export const Affiliations = [
   {
     id: 0,
     title: "Clinical Research Intern, MedStar Medical Group 🏥",
@@ -77,5 +75,3 @@ const Affiliations: Affiliation[] = [
     link: "https://www.tanium.com/",
   },
 ];
-
-export default Affiliations;
