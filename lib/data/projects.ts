@@ -15,7 +15,7 @@ export const projects: ProjectType[] = [
   {
     name: "CheatCodes",
     description:
-      "is my way of sharing my lived experiences with you. CheatCodes includes culture, thoughts, and meomentary glimpses into my life.",
+      "is my way of sharing my lived experiences with you. CheatCodes includes culture, thoughts, and momentary glimpses into my life.",
     liveLink: "https://blog.apurvashah.org/",
     codeLink: "https://github.com/lazarulian/blog-remake",
   },
