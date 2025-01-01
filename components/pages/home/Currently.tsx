@@ -3,24 +3,36 @@ import { unstable_noStore as noStore } from "next/cache";
 import { getShelves } from "@/lib/literal";
 import { ReadingCard } from "@/components/reusable/hover-card";
 import LinkPrimitive from "@/components/reusable/link-primatives";
+import { myMusic } from "@/lib/data/music";
+
+// Helper function to calculate the day of the year
+const getDayOfYear = () => {
+  const now = new Date();
+  const start = new Date(now.getFullYear(), 0, 0); // Start of the year
+  const diff =
+    now.getTime() -
+    start.getTime() +
+    (start.getTimezoneOffset() - now.getTimezoneOffset()) * 60 * 1000;
+  return Math.floor(diff / (1000 * 60 * 60 * 24));
+};
+
+// Helper function to select a track based on the day of the year
+const getDailyTrack = () => {
+  const dayOfYear = getDayOfYear();
+  return myMusic[dayOfYear % myMusic.length];
+};
 
 const Currently = async () => {
   noStore();
   const { reading } = await getShelves();
 
-  // const recent = song.is_playing ? song.item : song.items[0].track;
-  const track = {
-    title: "Pink + White",
-    artist: "Frank Ocean",
-    songUrl:
-      "https://music.apple.com/us/album/pink-white/1146195596?i=1146195714",
-  };
+  const track = getDailyTrack();
 
   return (
     <>
       <p className="first-letter:uppercase">
         Listening to{" "}
-        <LinkPrimitive href={track.songUrl} external popover>
+        <LinkPrimitive href={track.songUrl || "#"} external popover>
           {track.title}
         </LinkPrimitive>
         &nbsp;by {track.artist} and making my way through{" "}
