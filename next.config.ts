@@ -22,6 +22,11 @@ const nextConfig: NextConfig = {
         port: "",
         hostname: "**.literal.club",
       },
+      {
+        protocol: "https",
+        port: "",
+        hostname: "**.digitaloceanspaces.com",
+      },
     ],
   },
 };
