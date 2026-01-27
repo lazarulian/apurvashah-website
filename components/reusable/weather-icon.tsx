@@ -501,7 +501,6 @@ const WeatherIcon = ({
   weatherCode: number | undefined;
   isDaytime: boolean;
 }) => {
-  console.log(weatherCode, isDaytime);
   let weather;
   if (weatherCode && weatherMapping[weatherCode]) {
     weather = weatherMapping[weatherCode];

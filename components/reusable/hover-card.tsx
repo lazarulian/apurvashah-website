@@ -50,7 +50,6 @@ const HoverCardContentData = ({
   title: string;
   author: string;
 }) => {
-  console.log(src);
   return (
     <>
       <div className="aspect-square border rounded-[3px] overflow-hidden relative h-48">
