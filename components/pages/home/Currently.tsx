@@ -24,31 +24,47 @@ const getDailyTrack = () => {
 
 const Currently = async () => {
   noStore();
-  const { reading } = await getShelves();
 
-  const track = getDailyTrack();
+  try {
+    const { reading } = await getShelves();
+    const track = getDailyTrack();
 
-  return (
-    <>
+    return (
+      <>
+        <p className="first-letter:uppercase">
+          Listening to{" "}
+          <LinkPrimitive href={track.songUrl || "#"} external popover>
+            {track.title}
+          </LinkPrimitive>
+          &nbsp;by {track.artist} and making my way through{" "}
+          <ReadingCard {...reading}>
+            <LinkPrimitive
+              href={`https://literal.club/apurvashah/book/${reading.slug}`}
+              external
+              popover
+            >
+              {reading.title}
+            </LinkPrimitive>
+          </ReadingCard>{" "}
+          by {reading.author}.
+        </p>
+      </>
+    );
+  } catch (error) {
+    console.error("Unexpected error in Currently component:", error);
+
+    // Fallback UI if everything fails
+    const track = getDailyTrack();
+    return (
       <p className="first-letter:uppercase">
         Listening to{" "}
         <LinkPrimitive href={track.songUrl || "#"} external popover>
           {track.title}
         </LinkPrimitive>
-        &nbsp;by {track.artist} and making my way through{" "}
-        <ReadingCard {...reading}>
-          <LinkPrimitive
-            href={`https://literal.club/apurvashah/book/${reading.slug}`}
-            external
-            popover
-          >
-            {reading.title}
-          </LinkPrimitive>
-        </ReadingCard>{" "}
-        by {reading.author}.
+        &nbsp;by {track.artist} and exploring great books.
       </p>
-    </>
-  );
+    );
+  }
 };
 
 export default Currently;

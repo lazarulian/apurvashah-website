@@ -17,8 +17,15 @@ const Hero = () => {
 
   useEffect(() => {
     const fetchWeather = async () => {
-      const data = await getCurrentWeather(); // San Francisco coordinates
-      setWeatherData(data);
+      try {
+        const data = await getCurrentWeather(); // San Francisco coordinates
+        setWeatherData(data);
+      } catch (error) {
+        // This shouldn't happen since getCurrentWeather returns fallback,
+        // but defense-in-depth means we handle it anyway
+        console.error("Unexpected error fetching weather:", error);
+        setWeatherData({ temperature: 65, weatherCode: 2 });
+      }
     };
 
     fetchWeather();

@@ -26,6 +26,7 @@ const nextConfig: NextConfig = {
         protocol: "https",
         port: "",
         hostname: "**.digitaloceanspaces.com",
+        hostname: "**.media-amazon.com",
       },
     ],
   },
