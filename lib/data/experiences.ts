@@ -37,10 +37,10 @@ export const experiences = [
   },
   {
     company: "UCLA Health",
-    role: "SWE Intern",
+    role: "Founding Engineer",
     link: "https://ucla.technologypublisher.com/technology/47503",
-    range: "2021 - 2022",
+    range: "2021 - 2023",
     description:
-      "Developed entire platform processing cardiopulmonary exercise test data using React, DjangoRest, and PostgreSQL. Currently used in production at the UCLA David Geffen School of Medicine.",
+      "Developed entire platform processing cardiopulmonary exercise test data using React, FastAPI, and PostgreSQL. Currently used in production at the UCLA Ronald Reagan Medical Center.",
   },
 ];

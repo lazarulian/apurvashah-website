@@ -8,7 +8,7 @@ export const viewport: Viewport = {
 
 const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
-    <div className="py-10 md:px-12 bg relative">
+    <div className="py-10 md:px-12 relative">
       <div className="hidden sm:block z-[100]">
         <Navbar />
       </div>
