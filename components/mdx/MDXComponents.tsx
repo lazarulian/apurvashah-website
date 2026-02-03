@@ -36,10 +36,16 @@ export const mdxComponents = {
     />
   ),
   ul: (props: React.ComponentPropsWithoutRef<"ul">) => (
-    <ul className="list-disc list-inside text-white mb-4 space-y-1" {...props} />
+    <ul
+      className="list-disc list-inside text-white mb-4 space-y-1"
+      {...props}
+    />
   ),
   ol: (props: React.ComponentPropsWithoutRef<"ol">) => (
-    <ol className="list-decimal list-inside text-white mb-4 space-y-1" {...props} />
+    <ol
+      className="list-decimal list-inside text-white mb-4 space-y-1"
+      {...props}
+    />
   ),
   li: (props: React.ComponentPropsWithoutRef<"li">) => (
     <li className="text-white" {...props} />
@@ -50,18 +56,26 @@ export const mdxComponents = {
       {...props}
     />
   ),
-  img: (props: React.ComponentPropsWithoutRef<"img">) => (
-    <span className="block my-6 border border-gray-800 rounded-md overflow-hidden">
-      <Image
-        src={props.src || ""}
-        alt={props.alt || ""}
-        width={800}
-        height={600}
-        className="w-full h-auto"
-        quality={30}
-      />
-    </span>
-  ),
+  img: (props: React.ComponentPropsWithoutRef<"img">) => {
+    const src = typeof props.src === "string" ? props.src : "";
+
+    if (!src) {
+      return null;
+    }
+
+    return (
+      <span className="block my-6 border border-gray-800 rounded-md overflow-hidden">
+        <Image
+          src={src}
+          alt={props.alt || ""}
+          width={800}
+          height={600}
+          className="w-full h-auto"
+          quality={30}
+        />
+      </span>
+    );
+  },
   code: (props: React.ComponentPropsWithoutRef<"code">) => (
     <code
       className="bg-gray-800/30 px-1.5 py-0.5 rounded-sm text-sm font-mono text-accent"
