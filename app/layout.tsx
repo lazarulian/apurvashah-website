@@ -55,7 +55,7 @@ export default function RootLayout({
       <Head>
         <meta name="theme-color" content="#000000" />
       </Head>
-      <body className={cn(monument.className)}>
+      <body className={cn(monument.className, "bg")}>
         {children}
         <Analytics />
         <SpeedInsights />
